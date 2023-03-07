@@ -38,29 +38,29 @@ blueprint of a python/flask api for json data
 
 **GET**:
 
-	* retrieves json objects
-	* filters may be parameterized
+* retrieves json objects
+* filters may be parameterized
 
 **POST**
 
-	* creates new json objects from posted data
-	* requires json data to be stored
+* creates new json objects from posted data
+* requires json data to be stored
 
 **PUT**
 
-	* replaces data in existing json objects with posted data
-	* requires recordId and data to replace current version
+* replaces data in existing json objects with posted data
+* requires recordId and data to replace current version
 
 **PATCH**
 
-	* updates data in existing json objects from patched data
-	* requires recordId and data to update current version
+* updates data in existing json objects from patched data
+* requires recordId and data to update current version
 
 **DELETE**
 
-	* removes a json object
-	* requires recordId as the sole parameter
+* removes a json object
+* requires recordId as the sole parameter
 
 Note: *recordId* is derived from the *identifier* of the DataModel child class
 
-	- if *identifier* = 'example' then *recordId* = 'example-xxxxxxxxxxxx' where x is a random, hexidecimal integer
+- if *identifier* = 'example' then *recordId* = 'example-xxxxxxxxxxxx' where x is a random, hexidecimal integer
