@@ -47,7 +47,7 @@ class DataModel(ABC):
 				raise KeyError("missing " + field + " field")
 		for field in data:
 			if field not in self.defaultFields and field not in self.requiredFields and field not in self.optionalFields:
-				raise KeyError(field + " is not a member of event")
+				raise KeyError(field + " is not a member of" + self.identifier)
 
 	def __del__(self):
 		if self.purge:
